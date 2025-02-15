@@ -2,6 +2,8 @@
 
 Este es un proyecto de automatización web usando Serenity, Selenium y Cucumber. El proyecto demuestra un flujo típico de automatización de un sitio web de comercio electrónico, incluyendo el registro de usuarios, el inicio de sesión y las operaciones del carrito de la compra.
 
+Elegí el patrón Screenplay porque es una extensión y evolución del patrón Page Object Model (POM), ofreciendo mayor modularidad, reutilización y facilidad de mantenimiento. Permite crear tareas pequeñas y reutilizables, mejora la legibilidad del código y se integra bien con herramientas como Cucumber, lo que facilita la gestión de pruebas complejas de manera eficiente y escalable.
+
 ## Prerequisitos
 
 Para ejecutar este proyecto, asegúrate de tener instalado lo siguiente:
