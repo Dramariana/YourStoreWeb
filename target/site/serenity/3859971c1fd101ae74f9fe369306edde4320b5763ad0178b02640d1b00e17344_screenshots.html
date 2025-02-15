@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b5d536362bd58521ef68be57607e356e68f9e664f56b95c5eb6a29c20b7eb46c.html">Purchase Flow In The E-Commerce Site</a></span>
+                > <span class="truncate-60"><a
+                    href="3859971c1fd101ae74f9fe369306edde4320b5763ad0178b02640d1b00e17344.html">Complete the registration, login, purchase, and order confirmation process </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 14-02-2025 20:20</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Purchase Flow In The E-Commerce Site </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">Test
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Complete the registration, login, purchase, and order confirmation process
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I fill in the registration form with first name "&lt;firstName&gt;", last name "&lt;lastName&gt;", email "&lt;email&gt;", telephone "&lt;telephone&gt;", password "&lt;password&gt;", confirm password "&lt;confirmPassword&gt;" and save the register<br>When The user validates the login<br>And The user resets the password "&lt;newPassword&gt;"<br>And The user navigates to the Laptops & Notebooks section and selects the Show all laptops & notebooks option<br>And The user adds a "&lt;producto&gt;" to the shopping cart<br>And The user uses the search bar to find a "&lt;secondProducto&gt;" and adds it to the cart<br>And The user removes "&lt;producto&gt;" from the cart<br>And The user adds another unit of "&lt;secondProducto&gt;" to the cart<br>And The user completes the purchase process up to the order confirmation<br>Then The user should see the order confirmation</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" 1: Complete the registration, login, purchase, and order confirmation process ({firstName=Jane, lastName=Smith, email=jane.smith33@example.com, telephone=987654321, password=password456, confirmPassword=password456, newPassword=password12345, producto=MacBook Pro, secondProducto=Samsung Galaxy})" width="1440"/>
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" Given I fill in the registration form with first name &quot;Jane&quot;, last name &quot;Smith&quot;, email &quot;jane.smith33@example.com&quot;, telephone &quot;987654321&quot;, password &quot;password456&quot;, confirm password &quot;password456&quot; and save the register" width="1440"/>
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" Mariana opens the Home page" width="1440"/>
+                <img src="761fa46963062dfcfdb8f2f8c944907c2bc945f9a816f8781fa256c0463d891b.png" title=" Mariana opens the Home page (completed)" width="1440"/>
+                <img src="761fa46963062dfcfdb8f2f8c944907c2bc945f9a816f8781fa256c0463d891b.png" title=" Mariana register" width="1440"/>
+                <img src="8ed28cb4b454004a6ff0e74b56c14275b5fbd1f1efd8045af86a81252dd15def.png" title=" Mariana clicks on my account" width="1440"/>
+                <img src="c6f59d9fe9d10d42b6e60feba080f51a480390cf9738eca5259180991b0a56b9.png" title=" Mariana clicks on my account (completed)" width="1440"/>
+                <img src="c6f59d9fe9d10d42b6e60feba080f51a480390cf9738eca5259180991b0a56b9.png" title=" Mariana clicks on register" width="1440"/>
+                <img src="430bb45b01c69db392db65711c363c1e7013eabd1b16d9eae33bc9564d40260c.png" title=" Mariana clicks on register (completed)" width="1440"/>
+                <img src="430bb45b01c69db392db65711c363c1e7013eabd1b16d9eae33bc9564d40260c.png" title=" Mariana enters 'Jane' into First Name" width="1440"/>
+                <img src="c0779df7af4bf0a378816408899aa9a79cfb8ba97d7771e779a788674e103e34.png" title=" Mariana enters 'Jane' into First Name (completed)" width="1440"/>
+                <img src="c0779df7af4bf0a378816408899aa9a79cfb8ba97d7771e779a788674e103e34.png" title=" Mariana enters 'Smith' into Last Name" width="1440"/>
+                <img src="17a4d09b30ef209aceefe519639e507dc8c66b397759b1e8fd7c60659deb2c9a.png" title=" Mariana enters 'Smith' into Last Name (completed)" width="1440"/>
+                <img src="17a4d09b30ef209aceefe519639e507dc8c66b397759b1e8fd7c60659deb2c9a.png" title=" Mariana enters 'jane.smith33@example.com' into E-Mail" width="1440"/>
+                <img src="ed2a82ac05dbef8affab69691755f788699ee988669ff35f9eea4c1472fb1a70.png" title=" Mariana enters 'jane.smith33@example.com' into E-Mail (completed)" width="1440"/>
+                <img src="ed2a82ac05dbef8affab69691755f788699ee988669ff35f9eea4c1472fb1a70.png" title=" Mariana enters '987654321' into Telephone" width="1440"/>
+                <img src="7b4994d19b84255b80fa8e83d5e06c297a6f59121adedecb4be77447335ba914.png" title=" Mariana enters '987654321' into Telephone (completed)" width="1440"/>
+                <img src="7b4994d19b84255b80fa8e83d5e06c297a6f59121adedecb4be77447335ba914.png" title=" Mariana enters 'password456' into Password" width="1440"/>
+                <img src="dfc647e959a73d957e382efc15d4d70b8e49712bc4499798667edf00044befac.png" title=" Mariana enters 'password456' into Password (completed)" width="1440"/>
+                <img src="dfc647e959a73d957e382efc15d4d70b8e49712bc4499798667edf00044befac.png" title=" Mariana enters 'password456' into Password Confirm" width="1440"/>
+                <img src="1173f7a61fde3553246b5e22c45547a8925cc2682252c44dd6b91091dbaf5ba0.png" title=" Mariana enters 'password456' into Password Confirm (completed)" width="1440"/>
+                <img src="1173f7a61fde3553246b5e22c45547a8925cc2682252c44dd6b91091dbaf5ba0.png" title=" Mariana clicks on yes Option" width="1440"/>
+                <img src="0cd8989140f152f9ced366c5b2fbea0bdfa7e5038ded0326629e09240456a2e9.png" title=" Mariana clicks on yes Option (completed)" width="1440"/>
+                <img src="0cd8989140f152f9ced366c5b2fbea0bdfa7e5038ded0326629e09240456a2e9.png" title=" Mariana clicks on privacy policy" width="1440"/>
+                <img src="5d371ef1d63b40142b9044c91a9b6b17b2b15c0a3e49d376992709e6f686e315.png" title=" Mariana clicks on privacy policy (completed)" width="1440"/>
+                <img src="5d371ef1d63b40142b9044c91a9b6b17b2b15c0a3e49d376992709e6f686e315.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana register (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Given I fill in the registration form with first name &quot;Jane&quot;, last name &quot;Smith&quot;, email &quot;jane.smith33@example.com&quot;, telephone &quot;987654321&quot;, password &quot;password456&quot;, confirm password &quot;password456&quot; and save the register (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" When The user validates the login" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" And The user resets the password &quot;password12345&quot;" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana password" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana clicks on password" width="1440"/>
+                <img src="cdde1050049c9d59bd9c0ecf4bc74d1ade03a1911f1b5309fc7dd5360b946b2e.png" title=" Mariana clicks on password (completed)" width="1440"/>
+                <img src="cdde1050049c9d59bd9c0ecf4bc74d1ade03a1911f1b5309fc7dd5360b946b2e.png" title=" Mariana enters 'password12345' into Password" width="1440"/>
+                <img src="c722de4956d996b94714b7031e1005a8c6f9c33f4699c23877327746754aef7e.png" title=" Mariana enters 'password12345' into Password (completed)" width="1440"/>
+                <img src="c722de4956d996b94714b7031e1005a8c6f9c33f4699c23877327746754aef7e.png" title=" Mariana enters 'password12345' into Password Confirm" width="1440"/>
+                <img src="68078a0b34aece6a683e346939fdcbb0e7214921dfe6bcd505188615198b55b4.png" title=" Mariana enters 'password12345' into Password Confirm (completed)" width="1440"/>
+                <img src="68078a0b34aece6a683e346939fdcbb0e7214921dfe6bcd505188615198b55b4.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana password (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" And The user resets the password &quot;password12345&quot; (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" And The user navigates to the Laptops &amp; Notebooks section and selects the Show all laptops &amp; notebooks option" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana laptops and notebook" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana clicks on Laptops &amp; Notebooks" width="1440"/>
+                <img src="529d714eb16c95460481f8b03278b5c839a082537814d5ae43e6fffce961bb5a.png" title=" Mariana clicks on Laptops &amp; Notebooks (completed)" width="1440"/>
+                <img src="529d714eb16c95460481f8b03278b5c839a082537814d5ae43e6fffce961bb5a.png" title=" Mariana clicks on Show All Laptops &amp; Notebooks" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana clicks on Show All Laptops &amp; Notebooks (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana laptops and notebook (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" And The user navigates to the Laptops &amp; Notebooks section and selects the Show all laptops &amp; notebooks option (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" And The user adds a &quot;MacBook Pro&quot; to the shopping cart" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana select" width="1440"/>
+                <img src="cf7144bc8703f2cfeadc0c40a1313661bd0f7ed8d6b5cc581bb2e7e946dc2a3b.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'MacBook Pro')]]" width="1440"/>
+                <img src="c113449403bad28af6ef87bdb746be34133682bf22fc351592ff4c554f123383.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'MacBook Pro')]] (completed)" width="1440"/>
+                <img src="c113449403bad28af6ef87bdb746be34133682bf22fc351592ff4c554f123383.png" title=" Mariana clicks on button cart" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" Mariana clicks on button cart (completed)" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" Mariana select (completed)" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" And The user adds a &quot;MacBook Pro&quot; to the shopping cart (completed)" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" And The user uses the search bar to find a &quot;Samsung Galaxy&quot; and adds it to the cart" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" Mariana search" width="1440"/>
+                <img src="cca470591d89cbc25c3032129e07f7d4bb339a12714ea31840c8dac272521537.png" title=" Mariana enters 'Samsung Galaxy' into Search" width="1440"/>
+                <img src="c5945460526978f9d421f30cb1d7cca775ef6d3f1b3cd90979dba32b32d0026f.png" title=" Mariana enters 'Samsung Galaxy' into Search (completed)" width="1440"/>
+                <img src="c5945460526978f9d421f30cb1d7cca775ef6d3f1b3cd90979dba32b32d0026f.png" title=" Mariana clicks on seacrh button" width="1440"/>
+                <img src="1a7f2cb5420173d2cc27a48489091ccdae9856ee973c74b7ebf2b9fec652853a.png" title=" Mariana clicks on seacrh button (completed)" width="1440"/>
+                <img src="1a7f2cb5420173d2cc27a48489091ccdae9856ee973c74b7ebf2b9fec652853a.png" title=" Mariana select" width="1440"/>
+                <img src="3594fbeb65b976cac64f5e5f2d8e606bbe37da6c305bccd0e94b1ad05c0f0c7d.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'Samsung Galaxy')]]" width="1440"/>
+                <img src="53c0ec8583c0dad281ea444feee1d498567430f97fc5514079a6a1994ff4d179.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'Samsung Galaxy')]] (completed)" width="1440"/>
+                <img src="53c0ec8583c0dad281ea444feee1d498567430f97fc5514079a6a1994ff4d179.png" title=" Mariana clicks on button cart" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" Mariana clicks on button cart (completed)" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" Mariana select (completed)" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" Mariana search (completed)" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" And The user uses the search bar to find a &quot;Samsung Galaxy&quot; and adds it to the cart (completed)" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" And The user removes &quot;MacBook Pro&quot; from the cart" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" Mariana shopping cart" width="1440"/>
+                <img src="cd612b8818106f38c6bdbf01224caa6b8114c31765d718fab5bb9a8cbbd9dbb5.png" title=" Mariana clicks on shopping cart" width="1440"/>
+                <img src="cd6a73d44f71dbb902f46ae7c9b22554d9a4c0df193fc72c4196abfbe56a4326.png" title=" Mariana clicks on shopping cart (completed)" width="1440"/>
+                <img src="cd6a73d44f71dbb902f46ae7c9b22554d9a4c0df193fc72c4196abfbe56a4326.png" title=" Mariana shopping cart (completed)" width="1440"/>
+                <img src="cd6a73d44f71dbb902f46ae7c9b22554d9a4c0df193fc72c4196abfbe56a4326.png" title=" Mariana delete" width="1440"/>
+                <img src="cd6a73d44f71dbb902f46ae7c9b22554d9a4c0df193fc72c4196abfbe56a4326.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'MacBook Pro')]]//button[contains(@class, 'btn-danger') and .//i[contains(@class, 'fa-times-circle')]]]" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'MacBook Pro')]]//button[contains(@class, 'btn-danger') and .//i[contains(@class, 'fa-times-circle')]]] (completed)" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" Mariana delete (completed)" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" And The user removes &quot;MacBook Pro&quot; from the cart (completed)" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" And The user adds another unit of &quot;Samsung Galaxy&quot; to the cart" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" Mariana change quantity" width="1440"/>
+                <img src="838026345f63b405fd0fdd790542b863f2aca20ebcc099ae761905bb8e90c829.png" title=" Mariana enters '2' into By.xpath: //tr[.//a[contains(text(),'Samsung Galaxy')]]//input[contains(@class, 'form-control')]" width="1440"/>
+                <img src="4aefdbe3abc7ee3428c6b2602431096dc3cc1d0191e7984e208c1c05831939a2.png" title=" Mariana enters '2' into By.xpath: //tr[.//a[contains(text(),'Samsung Galaxy')]]//input[contains(@class, 'form-control')] (completed)" width="1440"/>
+                <img src="4aefdbe3abc7ee3428c6b2602431096dc3cc1d0191e7984e208c1c05831939a2.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'Samsung Galaxy')]]//button[contains(@class, 'btn-primary') and .//i[contains(@class, 'fa-refresh')]]]" width="1440"/>
+                <img src="c5a048ae1b62c34a59912e320b88bb36a45d7ea6189a63bbe2a87ff444316075.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'Samsung Galaxy')]]//button[contains(@class, 'btn-primary') and .//i[contains(@class, 'fa-refresh')]]] (completed)" width="1440"/>
+                <img src="c5a048ae1b62c34a59912e320b88bb36a45d7ea6189a63bbe2a87ff444316075.png" title=" Mariana change quantity (completed)" width="1440"/>
+                <img src="c5a048ae1b62c34a59912e320b88bb36a45d7ea6189a63bbe2a87ff444316075.png" title=" And The user adds another unit of &quot;Samsung Galaxy&quot; to the cart (completed)" width="1440"/>
+                <img src="c5a048ae1b62c34a59912e320b88bb36a45d7ea6189a63bbe2a87ff444316075.png" title=" And The user completes the purchase process up to the order confirmation" width="1440"/>
+                <img src="c5a048ae1b62c34a59912e320b88bb36a45d7ea6189a63bbe2a87ff444316075.png" title=" Mariana complete" width="1440"/>
+                <img src="3f966b23f30b7baae03e860fc0a6e355c59160cec916b249d09e96ad4fb0d004.png" title=" Mariana clicks on checkout button" width="1440"/>
+                <img src="cac1480600f3c86fbfa080baa89c243a6d8b22a76bb1a9a05aec8a290a646326.png" title=" Mariana clicks on checkout button (completed)" width="1440"/>
+                <img src="cac1480600f3c86fbfa080baa89c243a6d8b22a76bb1a9a05aec8a290a646326.png" title=" Mariana enters 'Jane' into First Name" width="1440"/>
+                <img src="2570cf3c05f0287626c3aaee897d50348ed0dbb2660d137d07e25330d52059b2.png" title=" Mariana enters 'Jane' into First Name (completed)" width="1440"/>
+                <img src="2570cf3c05f0287626c3aaee897d50348ed0dbb2660d137d07e25330d52059b2.png" title=" Mariana enters 'Smith' into Last Name" width="1440"/>
+                <img src="071191670a1d9873e7a0d305b92e60bf4238184f7366294f7f4d74a4d3241566.png" title=" Mariana enters 'Smith' into Last Name (completed)" width="1440"/>
+                <img src="071191670a1d9873e7a0d305b92e60bf4238184f7366294f7f4d74a4d3241566.png" title=" Mariana enters 'Cr 33#88' into address" width="1440"/>
+                <img src="153a41c4196d06658f4a76448c6d015f5dd7e6d7d8c4fe1a3f2944f4550f0e51.png" title=" Mariana enters 'Cr 33#88' into address (completed)" width="1440"/>
+                <img src="153a41c4196d06658f4a76448c6d015f5dd7e6d7d8c4fe1a3f2944f4550f0e51.png" title=" Mariana enters 'city' into city" width="1440"/>
+                <img src="a0e18be62ca84bc951fd95199e1cbe5f86973bb962e7553ead5f14a525f8a6e0.png" title=" Mariana enters 'city' into city (completed)" width="1440"/>
+                <img src="a0e18be62ca84bc951fd95199e1cbe5f86973bb962e7553ead5f14a525f8a6e0.png" title=" Mariana enters '3578' into post code" width="1440"/>
+                <img src="19be425206740a9a25aa7df0c16a87241ca1ee36baad6f9663928ceb815d7eab.png" title=" Mariana enters '3578' into post code (completed)" width="1440"/>
+                <img src="7a7792f64f526d19237780136530c42c2613b0a5fc83c197e2f5776146386da6.png" title=" Mariana clicks on region" width="1440"/>
+                <img src="9e471bb67b0fa58d40188452e888a0e7cc8f548e4d4fd875c095c83319666745.png" title=" Mariana clicks on region (completed)" width="1440"/>
+                <img src="b638a73adfbc4ff2c0a5a4281362c658f31cfabf55a7044e4abe45cb136238bf.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="d48669ae3e75a3a5745ebf892fef2d35c6d643903c193ccf6e509f736574827b.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="d48669ae3e75a3a5745ebf892fef2d35c6d643903c193ccf6e509f736574827b.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="16e6d50f6cdd9b3d63846b11e2b3fa20b9f5e62472be2944b63fc7214b21d5b9.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="16e6d50f6cdd9b3d63846b11e2b3fa20b9f5e62472be2944b63fc7214b21d5b9.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="32352d388b4b096d5189ccb131104e29e5fefd92d0d2877ca3c922ff96943025.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="32352d388b4b096d5189ccb131104e29e5fefd92d0d2877ca3c922ff96943025.png" title=" Mariana clicks on term and conditions" width="1440"/>
+                <img src="00967abb4cce9a534a36870149eaaa51b5ce1e293c598f7de6999b2ae5d2a065.png" title=" Mariana clicks on term and conditions (completed)" width="1440"/>
+                <img src="00967abb4cce9a534a36870149eaaa51b5ce1e293c598f7de6999b2ae5d2a065.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="c4f82b347680673b60c04b24675cf8ea63833ddab693ff623bb9d8eeb96b06cf.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="c4f82b347680673b60c04b24675cf8ea63833ddab693ff623bb9d8eeb96b06cf.png" title=" Mariana clicks on confirm button" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Mariana clicks on confirm button (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Mariana complete (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" And The user completes the purchase process up to the order confirmation (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Then The user should see the order confirmation" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" 1: Complete the registration, login, purchase, and order confirmation process ({firstName=Jane, lastName=Smith, email=jane.smith33@example.com, telephone=987654321, password=password456, confirmPassword=password456, newPassword=password12345, producto=MacBook Pro, secondProducto=Samsung Galaxy}) (completed)" width="1440"/>
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" 2: Complete the registration, login, purchase, and order confirmation process ({firstName=Alice, lastName=Johnson, email=alice.johnson33@example.com, telephone=555123456, password=password789, confirmPassword=password789, newPassword=password12345, producto=HP LP3065, secondProducto=iPhone})" width="1440"/>
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" Given I fill in the registration form with first name &quot;Alice&quot;, last name &quot;Johnson&quot;, email &quot;alice.johnson33@example.com&quot;, telephone &quot;555123456&quot;, password &quot;password789&quot;, confirm password &quot;password789&quot; and save the register" width="1440"/>
+                <img src="da32362ea7db98d35218b42f786817f22a0ba291bab8b8b96d6859d3a316bd57.png" title=" Mariana opens the Home page" width="1440"/>
+                <img src="761fa46963062dfcfdb8f2f8c944907c2bc945f9a816f8781fa256c0463d891b.png" title=" Mariana opens the Home page (completed)" width="1440"/>
+                <img src="761fa46963062dfcfdb8f2f8c944907c2bc945f9a816f8781fa256c0463d891b.png" title=" Mariana register" width="1440"/>
+                <img src="761fa46963062dfcfdb8f2f8c944907c2bc945f9a816f8781fa256c0463d891b.png" title=" Mariana clicks on my account" width="1440"/>
+                <img src="7c866a53e397dcc208215234ed626d88c17b1a5598141972c1409119055bd428.png" title=" Mariana clicks on my account (completed)" width="1440"/>
+                <img src="7c866a53e397dcc208215234ed626d88c17b1a5598141972c1409119055bd428.png" title=" Mariana clicks on register" width="1440"/>
+                <img src="430bb45b01c69db392db65711c363c1e7013eabd1b16d9eae33bc9564d40260c.png" title=" Mariana clicks on register (completed)" width="1440"/>
+                <img src="430bb45b01c69db392db65711c363c1e7013eabd1b16d9eae33bc9564d40260c.png" title=" Mariana enters 'Alice' into First Name" width="1440"/>
+                <img src="56682e0bed327c03b04b0f0545bc7dbac15d7712e9f3cdf97c8147b036136858.png" title=" Mariana enters 'Alice' into First Name (completed)" width="1440"/>
+                <img src="56682e0bed327c03b04b0f0545bc7dbac15d7712e9f3cdf97c8147b036136858.png" title=" Mariana enters 'Johnson' into Last Name" width="1440"/>
+                <img src="0154c59528fd543b03b053288362df65847a5f1b386f0a38e11c3ea43a6e9a43.png" title=" Mariana enters 'Johnson' into Last Name (completed)" width="1440"/>
+                <img src="0154c59528fd543b03b053288362df65847a5f1b386f0a38e11c3ea43a6e9a43.png" title=" Mariana enters 'alice.johnson33@example.com' into E-Mail" width="1440"/>
+                <img src="1cf5d82db57419095992bbfa253db77936ce0c905574f2ec11ed2ed778abaea9.png" title=" Mariana enters 'alice.johnson33@example.com' into E-Mail (completed)" width="1440"/>
+                <img src="1cf5d82db57419095992bbfa253db77936ce0c905574f2ec11ed2ed778abaea9.png" title=" Mariana enters '555123456' into Telephone" width="1440"/>
+                <img src="a8444f837637120ddf4c8a263ff828916151be6f8cbeabeb6ebbfa91d4c544e7.png" title=" Mariana enters '555123456' into Telephone (completed)" width="1440"/>
+                <img src="a8444f837637120ddf4c8a263ff828916151be6f8cbeabeb6ebbfa91d4c544e7.png" title=" Mariana enters 'password789' into Password" width="1440"/>
+                <img src="2320045ec5b1e35cda07eddecd05cd8f7b58b20f673e96d7bffed9283fe3031d.png" title=" Mariana enters 'password789' into Password (completed)" width="1440"/>
+                <img src="2320045ec5b1e35cda07eddecd05cd8f7b58b20f673e96d7bffed9283fe3031d.png" title=" Mariana enters 'password789' into Password Confirm" width="1440"/>
+                <img src="e36076f5127a46531564236d48904e7126e1e0e5a3c651f9058c85f82e31d194.png" title=" Mariana enters 'password789' into Password Confirm (completed)" width="1440"/>
+                <img src="e36076f5127a46531564236d48904e7126e1e0e5a3c651f9058c85f82e31d194.png" title=" Mariana clicks on yes Option" width="1440"/>
+                <img src="605f48cd330e9aa241295db9601ea82ef394705e6fbdc79d8d5e89521e0a4fa5.png" title=" Mariana clicks on yes Option (completed)" width="1440"/>
+                <img src="605f48cd330e9aa241295db9601ea82ef394705e6fbdc79d8d5e89521e0a4fa5.png" title=" Mariana clicks on privacy policy" width="1440"/>
+                <img src="b51169e32f638631c06c63c977db5ed3b4e71ad2dbe0548c8aeb15693df00a4f.png" title=" Mariana clicks on privacy policy (completed)" width="1440"/>
+                <img src="b51169e32f638631c06c63c977db5ed3b4e71ad2dbe0548c8aeb15693df00a4f.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana register (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Given I fill in the registration form with first name &quot;Alice&quot;, last name &quot;Johnson&quot;, email &quot;alice.johnson33@example.com&quot;, telephone &quot;555123456&quot;, password &quot;password789&quot;, confirm password &quot;password789&quot; and save the register (completed)" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" When The user validates the login" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" And The user resets the password &quot;password12345&quot;" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana password" width="1440"/>
+                <img src="a55bd5e97b4d1bc5b6b29c921e56a223b345b8352178b10abc9227236076dc4e.png" title=" Mariana clicks on password" width="1440"/>
+                <img src="cdde1050049c9d59bd9c0ecf4bc74d1ade03a1911f1b5309fc7dd5360b946b2e.png" title=" Mariana clicks on password (completed)" width="1440"/>
+                <img src="cdde1050049c9d59bd9c0ecf4bc74d1ade03a1911f1b5309fc7dd5360b946b2e.png" title=" Mariana enters 'password12345' into Password" width="1440"/>
+                <img src="5f0ce2f7c95fec9b08e335869da50421ac71c0253c60f284e4e80a06e21391ba.png" title=" Mariana enters 'password12345' into Password (completed)" width="1440"/>
+                <img src="5f0ce2f7c95fec9b08e335869da50421ac71c0253c60f284e4e80a06e21391ba.png" title=" Mariana enters 'password12345' into Password Confirm" width="1440"/>
+                <img src="25225e8c064f2aa7788c9a0a34f4c2d631fcefef7df004b2a0c138179578cbae.png" title=" Mariana enters 'password12345' into Password Confirm (completed)" width="1440"/>
+                <img src="25225e8c064f2aa7788c9a0a34f4c2d631fcefef7df004b2a0c138179578cbae.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana password (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" And The user resets the password &quot;password12345&quot; (completed)" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" And The user navigates to the Laptops &amp; Notebooks section and selects the Show all laptops &amp; notebooks option" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana laptops and notebook" width="1440"/>
+                <img src="e38071689be35c0b3ec0660287942be5985cb48572bd9eeff0277d91d86cace7.png" title=" Mariana clicks on Laptops &amp; Notebooks" width="1440"/>
+                <img src="529d714eb16c95460481f8b03278b5c839a082537814d5ae43e6fffce961bb5a.png" title=" Mariana clicks on Laptops &amp; Notebooks (completed)" width="1440"/>
+                <img src="529d714eb16c95460481f8b03278b5c839a082537814d5ae43e6fffce961bb5a.png" title=" Mariana clicks on Show All Laptops &amp; Notebooks" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana clicks on Show All Laptops &amp; Notebooks (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana laptops and notebook (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" And The user navigates to the Laptops &amp; Notebooks section and selects the Show all laptops &amp; notebooks option (completed)" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" And The user adds a &quot;HP LP3065&quot; to the shopping cart" width="1440"/>
+                <img src="306d992c7e3a2827cfb7a3165036be0a7c1d8b5d002b1a77363614cfb10bad56.png" title=" Mariana select" width="1440"/>
+                <img src="434be6819841d515ee9710304c6dac07bd0616bad993fdee0bd917907f271ede.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'HP LP3065')]]" width="1440"/>
+                <img src="9967e647a8d527327bf0dfe6ecdbdf549f40898258751792e2031a94a0be2f92.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'HP LP3065')]] (completed)" width="1440"/>
+                <img src="9967e647a8d527327bf0dfe6ecdbdf549f40898258751792e2031a94a0be2f92.png" title=" Mariana clicks on button cart" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" Mariana clicks on button cart (completed)" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" Mariana select (completed)" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" And The user adds a &quot;HP LP3065&quot; to the shopping cart (completed)" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" And The user uses the search bar to find a &quot;iPhone&quot; and adds it to the cart" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" Mariana search" width="1440"/>
+                <img src="4fcf2993506d06f1266c7f5bc230b548956c64c1c7c50395009c17feb227ec26.png" title=" Mariana enters 'iPhone' into Search" width="1440"/>
+                <img src="65b65eeab573f22fa084c08a2e1f903fbd491d27b2580b3d0aef164ae38e4dbd.png" title=" Mariana enters 'iPhone' into Search (completed)" width="1440"/>
+                <img src="65b65eeab573f22fa084c08a2e1f903fbd491d27b2580b3d0aef164ae38e4dbd.png" title=" Mariana clicks on seacrh button" width="1440"/>
+                <img src="c3b075629d70b22bd56c125315c1f435a394cb8d384a08b196614323500267d7.png" title=" Mariana clicks on seacrh button (completed)" width="1440"/>
+                <img src="c3b075629d70b22bd56c125315c1f435a394cb8d384a08b196614323500267d7.png" title=" Mariana select" width="1440"/>
+                <img src="f7705f51398aa752d011e18397c2508763f57eaecb231f313600deaedb5117d4.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'iPhone')]]" width="1440"/>
+                <img src="f6a1ee293c8186df2f4886682f8a70d150ca9ea329611ba42514a8aa82047817.png" title=" Mariana clicks on [By.xpath: //h4/a[contains(text(),'iPhone')]] (completed)" width="1440"/>
+                <img src="f6a1ee293c8186df2f4886682f8a70d150ca9ea329611ba42514a8aa82047817.png" title=" Mariana clicks on button cart" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" Mariana clicks on button cart (completed)" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" Mariana select (completed)" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" Mariana search (completed)" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" And The user uses the search bar to find a &quot;iPhone&quot; and adds it to the cart (completed)" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" And The user removes &quot;HP LP3065&quot; from the cart" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" Mariana shopping cart" width="1440"/>
+                <img src="7d8853e63e9b0f6bf095b0e97802603dfa75ae6646eb8c2d3657ae7ec25566e7.png" title=" Mariana clicks on shopping cart" width="1440"/>
+                <img src="fc66c6eb2938f08a820c6a87c70298b4c7a0474fa5317c18e0913d777f1be83e.png" title=" Mariana clicks on shopping cart (completed)" width="1440"/>
+                <img src="fc66c6eb2938f08a820c6a87c70298b4c7a0474fa5317c18e0913d777f1be83e.png" title=" Mariana shopping cart (completed)" width="1440"/>
+                <img src="fc66c6eb2938f08a820c6a87c70298b4c7a0474fa5317c18e0913d777f1be83e.png" title=" Mariana delete" width="1440"/>
+                <img src="fc66c6eb2938f08a820c6a87c70298b4c7a0474fa5317c18e0913d777f1be83e.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'HP LP3065')]]//button[contains(@class, 'btn-danger') and .//i[contains(@class, 'fa-times-circle')]]]" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'HP LP3065')]]//button[contains(@class, 'btn-danger') and .//i[contains(@class, 'fa-times-circle')]]] (completed)" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" Mariana delete (completed)" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" And The user removes &quot;HP LP3065&quot; from the cart (completed)" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" And The user adds another unit of &quot;iPhone&quot; to the cart" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" Mariana change quantity" width="1440"/>
+                <img src="406c3b359bc1035e379e04d84feb11eb20767e835a67df08c7d99d17d0f21c53.png" title=" Mariana enters '2' into By.xpath: //tr[.//a[contains(text(),'iPhone')]]//input[contains(@class, 'form-control')]" width="1440"/>
+                <img src="331301799ddc653993a5e71087ab95c27893975fd34726b3ff0cec4157c08fcc.png" title=" Mariana enters '2' into By.xpath: //tr[.//a[contains(text(),'iPhone')]]//input[contains(@class, 'form-control')] (completed)" width="1440"/>
+                <img src="331301799ddc653993a5e71087ab95c27893975fd34726b3ff0cec4157c08fcc.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'iPhone')]]//button[contains(@class, 'btn-primary') and .//i[contains(@class, 'fa-refresh')]]]" width="1440"/>
+                <img src="6be18dd854ab5322d81a723699822f0e107f4e5279b4bce8f2a1e70d1e6752be.png" title=" Mariana clicks on [By.xpath: //tr[.//a[contains(text(),'iPhone')]]//button[contains(@class, 'btn-primary') and .//i[contains(@class, 'fa-refresh')]]] (completed)" width="1440"/>
+                <img src="6be18dd854ab5322d81a723699822f0e107f4e5279b4bce8f2a1e70d1e6752be.png" title=" Mariana change quantity (completed)" width="1440"/>
+                <img src="6be18dd854ab5322d81a723699822f0e107f4e5279b4bce8f2a1e70d1e6752be.png" title=" And The user adds another unit of &quot;iPhone&quot; to the cart (completed)" width="1440"/>
+                <img src="6be18dd854ab5322d81a723699822f0e107f4e5279b4bce8f2a1e70d1e6752be.png" title=" And The user completes the purchase process up to the order confirmation" width="1440"/>
+                <img src="6be18dd854ab5322d81a723699822f0e107f4e5279b4bce8f2a1e70d1e6752be.png" title=" Mariana complete" width="1440"/>
+                <img src="6ef0f1aac55b6181d123186e9b7c9b2bb8c6dbf302126f7b45e4ce36c0f7e8c9.png" title=" Mariana clicks on checkout button" width="1440"/>
+                <img src="2c71f0353d930fb2e284f5330ef2878fae0c66b290bb031957b4410493e41ea6.png" title=" Mariana clicks on checkout button (completed)" width="1440"/>
+                <img src="2c71f0353d930fb2e284f5330ef2878fae0c66b290bb031957b4410493e41ea6.png" title=" Mariana enters 'Alice' into First Name" width="1440"/>
+                <img src="ba36dfb7fb119321471785947d41fcd659d9886d477fdd59970acfe35f9a37a7.png" title=" Mariana enters 'Alice' into First Name (completed)" width="1440"/>
+                <img src="ba36dfb7fb119321471785947d41fcd659d9886d477fdd59970acfe35f9a37a7.png" title=" Mariana enters 'Johnson' into Last Name" width="1440"/>
+                <img src="e41d43b8f8f42721a3967a0f94c5b0a099f352a86716416f172583f58e12f418.png" title=" Mariana enters 'Johnson' into Last Name (completed)" width="1440"/>
+                <img src="e41d43b8f8f42721a3967a0f94c5b0a099f352a86716416f172583f58e12f418.png" title=" Mariana enters 'Cr 33#88' into address" width="1440"/>
+                <img src="676c695012c9fc3c442d9e4335542736bd085105093093e439c865ba7ed6fe86.png" title=" Mariana enters 'Cr 33#88' into address (completed)" width="1440"/>
+                <img src="676c695012c9fc3c442d9e4335542736bd085105093093e439c865ba7ed6fe86.png" title=" Mariana enters 'city' into city" width="1440"/>
+                <img src="f1d03550b7e883d6fd10e3a3aef46cc5772e909ec1f0f18bf8972aa13138f493.png" title=" Mariana enters 'city' into city (completed)" width="1440"/>
+                <img src="f1d03550b7e883d6fd10e3a3aef46cc5772e909ec1f0f18bf8972aa13138f493.png" title=" Mariana enters '3578' into post code" width="1440"/>
+                <img src="0797be436dd319709e1fcab1cd59f2d03a07369232f50c4b832b9a02c599449b.png" title=" Mariana enters '3578' into post code (completed)" width="1440"/>
+                <img src="7a7792f64f526d19237780136530c42c2613b0a5fc83c197e2f5776146386da6.png" title=" Mariana clicks on region" width="1440"/>
+                <img src="9e471bb67b0fa58d40188452e888a0e7cc8f548e4d4fd875c095c83319666745.png" title=" Mariana clicks on region (completed)" width="1440"/>
+                <img src="8bd12557b256fb8965adaa97291cb1e9ac0c785839313e83c790949472d1a3b3.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="c68b3da2855864363aaffc98dc723918c4ce4fe019b032370a7e232cdbdaef52.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="c68b3da2855864363aaffc98dc723918c4ce4fe019b032370a7e232cdbdaef52.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="945d2f5981dbbe3e5afa8df8e1cefc5f67d916d54a63052f7a752c956e05c17f.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="945d2f5981dbbe3e5afa8df8e1cefc5f67d916d54a63052f7a752c956e05c17f.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="9044622330321101c53c1f03086a2a9b84a4997e1c3691fca7dbc70404b99e0c.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="9044622330321101c53c1f03086a2a9b84a4997e1c3691fca7dbc70404b99e0c.png" title=" Mariana clicks on term and conditions" width="1440"/>
+                <img src="cc6548427a8476c83d02459982593986707b8e0b4709dc9e38bf6380b19375ef.png" title=" Mariana clicks on term and conditions (completed)" width="1440"/>
+                <img src="cc6548427a8476c83d02459982593986707b8e0b4709dc9e38bf6380b19375ef.png" title=" Mariana clicks on continue button" width="1440"/>
+                <img src="c01e411cc9d7804ccb1e8f803802af32d02d2e85a322268ffda5109965e574d8.png" title=" Mariana clicks on continue button (completed)" width="1440"/>
+                <img src="c01e411cc9d7804ccb1e8f803802af32d02d2e85a322268ffda5109965e574d8.png" title=" Mariana clicks on confirm button" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Mariana clicks on confirm button (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Mariana complete (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" And The user completes the purchase process up to the order confirmation (completed)" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" Then The user should see the order confirmation" width="1440"/>
+                <img src="c14eb214a1e515d940077364bf3a0e005ee2d3cde32adc95c828ff15ce7163e8.png" title=" 2: Complete the registration, login, purchase, and order confirmation process ({firstName=Alice, lastName=Johnson, email=alice.johnson33@example.com, telephone=555123456, password=password789, confirmPassword=password789, newPassword=password12345, producto=HP LP3065, secondProducto=iPhone}) (completed): <span class='success-color'>SUCCESS</span>" width="1440"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.12</span>
+</div>
+</body>
+</html>

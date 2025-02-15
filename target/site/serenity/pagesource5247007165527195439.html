@@ -1,0 +1,77 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html data-l10n-sync="true" lang="es-ES" dir="ltr"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'"&gt; <br/>
+  &lt;meta name="color-scheme" content="light dark"&gt; <br/>
+  &lt;title data-l10n-id="certerror-page-title"&gt;Advertencia: riesgo potencial de seguridad a continuación&lt;/title&gt; <br/>
+  &lt;link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="icon" id="favicon" href="chrome://global/skin/icons/warning.svg"&gt; <br/>
+  &lt;link rel="localization" href="branding/brand.ftl"&gt; <br/>
+  &lt;link rel="localization" href="toolkit/neterror/certError.ftl"&gt; <br/>
+  &lt;link rel="localization" href="toolkit/neterror/netError.ftl"&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="certerror" code="SEC_ERROR_EXPIRED_CERTIFICATE"&gt; <br/>
+  &lt;div class="container"&gt; <br/>
+   &lt;div id="text-container"&gt; &lt;!-- Error Title --&gt; <br/>
+    &lt;div class="title"&gt; <br/>
+     &lt;h1 class="title-text" data-l10n-id="nssBadCert-title"&gt;Advertencia: riesgo potencial de seguridad a continuación&lt;/h1&gt; <br/>
+    &lt;/div&gt; &lt;!-- Short Description --&gt; <br/>
+    &lt;p id="errorShortDesc" data-l10n-args="{&quot;hostname&quot;:&quot;opencart.abstracta.us&quot;}" data-l10n-id="certerror-expired-cert-intro"&gt;Firefox ha detectado un problema y no ha continuado a &lt;b&gt;opencart.abstracta.us&lt;/b&gt;. El sitio web está mal configurado o el reloj de su ordenador está configurado de manera incorrecta.&lt;/p&gt; <br/>
+    &lt;p id="errorShortDesc2" data-l10n-id="certerror-expired-cert-second-para"&gt;Probablemente el certificado del sitio ha expirado, lo que impide a Firefox conectarse de forma segura. Si visita este sitio, los atacantes pueden intentar robar información como sus contraseñas, correos o datos de la tarjeta de crédito.&lt;/p&gt; <br/>
+    &lt;div id="errorWhatToDo"&gt; <br/>
+     &lt;p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title"&gt;¿Qué puede hacer al respecto?&lt;/p&gt; <br/>
+     &lt;p id="badStsCertExplanation" hidden&gt;&lt;/p&gt; <br/>
+     &lt;p id="errorWhatToDoText"&gt;&lt;/p&gt;<br/>
+     &lt;p data-l10n-id="certerror-expired-cert-what-can-you-do-about-it-clock" data-l10n-args="{&quot;hostname&quot;:&quot;opencart.abstracta.us&quot;,&quot;now&quot;:1739561119223}"&gt;El reloj de su equipo está establecido en 14 feb 2025. Asegúrese de que su equipo está configurado, en los ajustes del sistema, en la fecha y hora correctas, así como la zona horaria apropiada, y luego refresque &lt;b&gt;opencart.abstracta.us&lt;/b&gt;.&lt;/p&gt;<br/>
+     &lt;p data-l10n-id="certerror-expired-cert-what-can-you-do-about-it-contact-website"&gt;Si su equipo ya está configurado en la hora correcta, entonces lo más probable es que el sitio web esté mal configurado, y no hay nada que pueda hacer para resolver el problema. Puede avisar al administrador del sitio web sobre el problema.&lt;/p&gt;<br/>
+     &lt;p&gt;&lt;/p&gt; <br/>
+    &lt;/div&gt; &lt;!-- Long Description --&gt; <br/>
+    &lt;div id="errorLongDesc"&gt;&lt;/div&gt; <br/>
+    &lt;div id="trrOnlyContainer" hidden&gt; <br/>
+     &lt;p id="trrOnlyMessage"&gt;&lt;/p&gt; <br/>
+     &lt;div class="trr-message-container"&gt; &lt;span id="trrOnlyDescription"&gt;&lt;/span&gt; <br/>
+      &lt;p id="trrLearnMoreContainer" hidden&gt; &lt;a id="trrOnlylearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link"&gt;Más información…&lt;/a&gt; &lt;/p&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2"&gt;Puede continuar con su servicio de DNS predeterminado. Sin embargo, un tercero podría ser capaz de ver los sitios web que visite.&lt;/p&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="nativeFallbackContainer" hidden&gt; <br/>
+     &lt;p id="nativeFallbackMessage"&gt;&lt;/p&gt; <br/>
+     &lt;div class="trr-message-container"&gt; &lt;span id="nativeFallbackDescription"&gt;&lt;/span&gt; <br/>
+      &lt;p id="nativeFallbackLearnMoreContainer" hidden&gt; &lt;a id="nativeFallbackLearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link"&gt;Más información…&lt;/a&gt; &lt;/p&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2"&gt;Puede continuar con su servicio de DNS predeterminado. Sin embargo, un tercero podría ser capaz de ver los sitios web que visite.&lt;/p&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;p id="tlsVersionNotice" hidden&gt;&lt;/p&gt; <br/>
+    &lt;p id="learnMoreContainer"&gt; &lt;a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" data-l10n-id="neterror-learn-more-link" href="https://support.mozilla.org/1/firefox/135.0/WINNT/es-ES/time-errors"&gt;Más información…&lt;/a&gt; &lt;/p&gt; <br/>
+    &lt;div id="openInNewWindowContainer" class="button-container" hidden&gt; <br/>
+     &lt;p&gt; &lt;button id="openInNewWindowButton" class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error"&gt;Abrir sitio en una nueva ventana&lt;/button&gt; &lt;/p&gt; <br/>
+    &lt;/div&gt; &lt;!-- UI for option to report certificate errors to Mozilla. Removed on<br/>
+             init for other error types .--&gt; <br/>
+    &lt;div id="prefChangeContainer" class="button-container" hidden&gt; <br/>
+     &lt;p data-l10n-id="neterror-pref-reset"&gt;Parece que su configuración de seguridad de red podría estar causando esto. ¿Quiere restaurar la configuración predeterminada?&lt;/p&gt; &lt;button id="prefResetButton" class="primary" data-l10n-id="neterror-pref-reset-button"&gt;Restablecer configuración predeterminada&lt;/button&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="certErrorAndCaptivePortalButtonContainer" class="button-container"&gt;<br/>
+     &lt;button id="returnButton" class="primary" data-telemetry-id="return_button_top" data-l10n-id="neterror-return-to-previous-page-recommended-button"&gt;Retroceder (recomendado)&lt;/button&gt; &lt;button id="openPortalLoginPageButton" class="primary" data-l10n-id="neterror-open-portal-login-page-button" hidden&gt;Abrir página de inicio de sesión en la red&lt;/button&gt; &lt;button id="certErrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden&gt;Reintentar&lt;/button&gt; &lt;button id="advancedButton" data-telemetry-id="advanced_button" data-l10n-id="neterror-advanced-button"&gt;Avanzado…&lt;/button&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="netErrorButtonContainer" class="button-container" hidden&gt; &lt;button id="neterrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" data-telemetry-id="try_again_button"&gt;Reintentar&lt;/button&gt; &lt;button id="trrExceptionButton" data-l10n-id="neterror-add-exception-button" data-telemetry-id="add_exception_button" hidden&gt;Continuar siempre para este sitio&lt;/button&gt; &lt;button id="trrSettingsButton" data-l10n-id="neterror-settings-button" data-telemetry-id="settings_button" hidden&gt;Cambiar la configuración de DNS&lt;/button&gt; &lt;button id="nativeFallbackContinueThisTimeButton" data-l10n-id="neterror-trr-continue-this-time" data-telemetry-id="continue_button" hidden&gt;Continuar esta vez&lt;/button&gt; &lt;button id="nativeFallbackIgnoreButton" data-l10n-id="neterror-disable-native-feedback-warning" data-telemetry-id="disable_warning" hidden&gt;Continuar siempre&lt;/button&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="advanced-panel-container"&gt; <br/>
+    &lt;div id="badCertAdvancedPanel" class="advanced-panel" hidden&gt; <br/>
+     &lt;p id="badCertTechnicalInfo"&gt;&lt;label data-l10n-args="{&quot;hostname&quot;:&quot;opencart.abstracta.us&quot;,&quot;not-after-local-time&quot;:&quot;29/1/2025&quot;}" data-l10n-id="cert-error-expired-now"&gt;Los sitios web demuestran su identidad mediante certificados, que son válidos durante un cierto periodo de tiempo. El certificado de opencart.abstracta.us dejó de ser válido el 29/1/2025.&lt;/label&gt; &lt;label data-l10n-args="{&quot;error&quot;:&quot;SEC_ERROR_EXPIRED_CERTIFICATE&quot;}" data-l10n-id="cert-error-code-prefix-link"&gt;Código de error: &lt;a id="errorCode" data-l10n-name="error-code-link" data-telemetry-id="error_code_link" href="#certificateErrorDebugInformation"&gt;SEC_ERROR_EXPIRED_CERTIFICATE&lt;/a&gt;&lt;/label&gt; &lt;/p&gt; &lt;a id="viewCertificate" href="javascript:void(0)" data-l10n-id="neterror-view-certificate-link"&gt;Ver certificado&lt;/a&gt; <br/>
+     &lt;div id="advancedPanelButtonContainer" class="button-container"&gt; &lt;button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv" data-l10n-id="neterror-return-to-previous-page-recommended-button"&gt;Retroceder (recomendado)&lt;/button&gt; &lt;button id="advancedPanelTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden&gt;Reintentar&lt;/button&gt; &lt;button id="exceptionDialogButton" data-telemetry-id="exception_button" data-l10n-id="neterror-override-exception-button"&gt;Aceptar el riesgo y continuar&lt;/button&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="blockingErrorReporting" class="advanced-panel" hidden&gt; <br/>
+     &lt;p class="toggle-container-with-text"&gt; &lt;input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox"&gt; &lt;label for="automaticallyReportBlockingInFuture" data-l10n-id="neterror-error-reporting-automatic"&gt;Informar de errores como esto ayuda a Mozilla a identificar y bloquear sitios maliciosos&lt;/label&gt; &lt;/p&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="certificateErrorDebugInformation" class="advanced-panel" hidden&gt; &lt;button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top" data-l10n-id="neterror-copy-to-clipboard-button"&gt;Copiar texto al portapapeles&lt;/button&gt; <br/>
+     &lt;div id="certificateErrorText"&gt;<br/>
+      https://opencart.abstracta.us/index.php?route=account/register El certificado de la otra parte ha caducado. Seguridad estricta de transporte HTTP: false Pinning de clave pública HTTP: false Cadena de certificados: -----BEGIN CERTIFICATE----- MIIDijCCAxGgAwIBAgISBLyDTSk0jdvWC5pPZDkAWnh2MAoGCCqGSM49BAMDMDIx CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF NTAeFw0yNDEwMzEyMzAxMzhaFw0yNTAxMjkyMzAxMzdaMCAxHjAcBgNVBAMTFW9w ZW5jYXJ0LmFic3RyYWN0YS51czBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABOew Q6aIxnxysgs4sIR9GNGw/u5ZQHaQfhi8Bw1ehKLE2/eVds3Nbo2ohjf91vpmLa8w wtp1LPyMxypXO57W/QGjggIXMIICEzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYw FAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNWh /wvYjXay7P7iXbBmXsOIBUTqMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL 0tcNMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVu Y3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMCAGA1Ud EQQZMBeCFW9wZW5jYXJ0LmFic3RyYWN0YS51czATBgNVHSAEDDAKMAgGBmeBDAEC ATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AM8RVu7VLnyv84db2Wkum+kacWdK sBfsrAHSW3fOzDsIAAABkuUFsqQAAAQDAEcwRQIgLh43mH0r4EarBS1gBEGLrRfE YGzJ0gnrXPhOb/27KTECIQC4d0wzz6btEz1v0yflBbv2YDA9vdmACjevZfEwPhpj BgB2ABNK3xq1mEIJeAxv70x6kaQWtyNJzlhXat+u2qfCq+AiAAABkuUFszUAAAQD AEcwRQIge3z1Qfn4b8/04l83Wd9diu37kWRDliLWoxCnqKcZdyACIQCEXiIcrxoQ 9a2eBrbwGG4FCwuvnOWQ3Lspn+tUPp90STAKBggqhkjOPQQDAwNnADBkAjAi/iu+ Hwj7IdhJ+nZSPZOBOSPOOBcGAgxg8qX5mQFIrS+DzZMZnLQy/BP5wELQNscCMF4o uuT4TJtrEaKth/YNW9dnK7WUxPWzjq1b83k7vkT+4GF4M9Iv+ux2kiCN7Jojwg== -----END CERTIFICATE----- -----BEGIN CERTIFICATE----- MIIEVzCCAj+gAwIBAgIRAIOPbGPOsTmMYgZigxXJ/d4wDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw WhcNMjcwMzEyMjM1OTU5WjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCRTUwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQNCzqK a2GOtu/cX1jnxkJFVKtj9mZhSAouWXW0gQI3ULc/FnncmOyhKJdyIBwsz9V8UiBO VHhbhBRrwJCuhezAUUE8Wod/Bk3U/mDR+mwt4X2VEIiiCFQPmRpM5uoKrNijgfgw gfUwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD ATASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBSfK1/PPCFPnQS37SssxMZw i9LXDTAfBgNVHSMEGDAWgBR5tFnme7bl5AFzgAiIyBpY9umbbjAyBggrBgEFBQcB AQQmMCQwIgYIKwYBBQUHMAKGFmh0dHA6Ly94MS5pLmxlbmNyLm9yZy8wEwYDVR0g BAwwCjAIBgZngQwBAgEwJwYDVR0fBCAwHjAcoBqgGIYWaHR0cDovL3gxLmMubGVu Y3Iub3JnLzANBgkqhkiG9w0BAQsFAAOCAgEAH3KdNEVCQdqk0LKyuNImTKdRJY1C 2uw2SJajuhqkyGPY8C+zzsufZ+mgnhnq1A2KVQOSykOEnUbx1cy637rBAihx97r+ bcwbZM6sTDIaEriR/PLk6LKs9Be0uoVxgOKDcpG9svD33J+G9Lcfv1K9luDmSTgG 6XNFIN5vfI5gs/lMPyojEMdIzK9blcl2/1vKxO8WGCcjvsQ1nJ/Pwt8LQZBfOFyV XP8ubAp/au3dc4EKWG9MO5zcx1qT9+NXRGdVWxGvmBFRAajciMfXME1ZuGmk3/GO koAM7ZkjZmleyokP1LGzmfJcUd9s7eeu1/9/eg5XlXd/55GtYjAM+C4DG5i7eaNq cm2F+yxYIPt6cbbtYVNJCGfHWqHEQ4FYStUyFnv8sjyqU8ypgZaNJ9aVcWSICLOI E1/Qv/7oKsnZCWJ926wU6RqG1OYPGOi1zuABhLw61cuPVDT28nQS/e6z95cJXq0e K1BcaJ6fJZsmbjRgD5p3mvEf5vdQM7MCEvU0tHbsx2I5mHHJoABHb8KVBgWp/lcX GWiWaeOyB7RP+OfDtvi2OsapxXiV7vNVs7fMlrRjY1joKaqmmycnBvAq14AEbtyL sVfOS66B8apkeFX2NY4XPEYV4ZSCe8VHPrdrERk2wILG3T/EGmSIkCYVUMSnjmJd VQD9F6Na/+zmXCc= -----END CERTIFICATE----- <br/>
+     &lt;/div&gt; &lt;button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot" data-l10n-id="neterror-copy-to-clipboard-button"&gt;Copiar texto al portapapeles&lt;/button&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;script src="chrome://global/content/neterror/aboutNetErrorCodes.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="module" src="chrome://global/content/aboutNetError.mjs"&gt;&lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

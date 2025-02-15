@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Purchase Flow in the E-Commerce Site" skipped="0" tests="1" time="10.3" timestamp="2025-02-14 08:24:03"><testcase name="Complete the registration, login, purchase, and order confirmation process"><error message="Tried to run command without establishing a connection&#10;Build info: version: '4.8.0', revision: '267030adea'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [2383fe4c-123d-4cbf-aee8-31f3bc2c075d, setTimeout {implicit=0}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15696, moz:profile: C:\Users\maria\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Session ID: 2383fe4c-123d-4cbf-aee8-31f3bc2c075d&#10;Build info: version: '4.8.0', revision: '267030adea'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Tried to run command without establishing a connection
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2383fe4c-123d-4cbf-aee8-31f3bc2c075d, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15696, moz:profile: C:\Users\maria\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2383fe4c-123d-4cbf-aee8-31f3bc2c075d
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: unknown</error><system-err>Tried to run command without establishing a connection
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2383fe4c-123d-4cbf-aee8-31f3bc2c075d, setTimeout {implicit=0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15696, moz:profile: C:\Users\maria\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2383fe4c-123d-4cbf-aee8-31f3bc2c075d
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: unknown&#13;
+yourStoreWeb.task.Register.performAs(Register.java:36)&#13;
+yourStoreWeb.stepdefinitions.YourStoreWebStepdefinitions.iFillInTheRegistrationFormWithFirstNameLastNameEmailTelephonePasswordConfirmPasswordAndSaveTheRegister(YourStoreWebStepdefinitions.java:50)&#13;
+✽.I fill in the registration form with first name "Jane", last name "Smith", email "jane.smith31@example.com", telephone "987654321", password "password456", confirm password "password456" and save the register(file:///C:/Users/maria/IdeaProjects/YourStoreWeb/src/test/resources/features/yourStoreWeb.feature:5)&#13;
+</system-err></testcase></testsuite>

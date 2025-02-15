@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Purchase Flow in the E-Commerce Site" skipped="0" tests="2" time="25.11" timestamp="2025-02-14 03:35:53"><testcase name="User registers successfully"/><testcase name="User logs in"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+yourStoreWeb.stepdefinitions.YourStoreWebStepdefinitions.userOnTheLoginPageAndLogInWithValidCredentials(YourStoreWebStepdefinitions.java:70)&#13;
+✽.User on the login page and log in with valid credentials(file:///C:/Users/maria/IdeaProjects/YourStoreWeb/src/test/resources/features/yourStoreWeb.feature:18)&#13;
+</system-err></testcase></testsuite>
